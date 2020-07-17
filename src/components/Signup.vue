@@ -216,8 +216,10 @@ export default {
                                 }
                             alert('Signed up Successfully')
                             router.push('/home/' + firebase.auth().currentUser.displayName)
+                            router.go(0)
                             
                         })
+                
                         .catch(function(error) {
                             var errorMessage = error.message;
                             alert(errorMessage)
@@ -233,7 +235,8 @@ export default {
                 }        
                 else{
                     alert('Passwords do not match!!')
-                }  
+                } 
+                 
             }
             
         },

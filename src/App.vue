@@ -87,7 +87,7 @@ export default {
             .then(() => {
                 alert(this.username + ' signed out successfully')
                 this.$router.push('/signin')
-                this.$router.go() 
+                this.$router.go(0) 
             }, function(error) {
                 alert('Sign Out Error', error);
             });
