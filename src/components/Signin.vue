@@ -38,7 +38,7 @@ export default {
                 
                 alert('Welcome ' + firebase.auth().currentUser.displayName)
                 router.push('/home/' + firebase.auth().currentUser.displayName)    
-
+                router.go()
             })
             
             .catch(function(error) {

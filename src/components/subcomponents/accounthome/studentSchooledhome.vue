@@ -5,7 +5,7 @@
       <h6>Form: {{form}}</h6>
       <h6>Admission: {{admission}}</h6>
       <h6>Account type: {{accountType}}</h6>
-      <button v-on:click="signout()" class="btn btn-outline-danger m-2s">Log Out</button>
+      
     </div>
     
     <div class="container mt-5 border p-5">

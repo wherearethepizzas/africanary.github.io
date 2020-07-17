@@ -15,7 +15,7 @@ import institutionhome from '../components/subcomponents/accounthome/institution
 import teacherhome from '../components/subcomponents/accounthome/teacherhome.vue'
 import studentSchooledhome from '../components/subcomponents/accounthome/studentSchooledhome.vue'
 import studentNotSchooledhome from '../components/subcomponents/accounthome/studentNotSchooledhome.vue'
-
+import firebase from 'firebase'
 
 Vue.use(VueRouter)
 
@@ -23,7 +23,10 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: home
+    component: home,
+    meta: {
+      requiresGuest: true
+    }
   },
   {
     path: '/features',
@@ -44,22 +47,29 @@ const routes = [
     path: '/signin',
     name: 'signin',
     component: signin
+    
   },
   {
     path: '/home/:username',
     name: 'accounthome',
-    component: accounthome
+    component: accounthome,
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path:'/home/:username/Subjects/:subject',
     name:'',
-    component:subject
+    component:subject,
+    meta: {
+      requiresAuth: true
+    }
   }
 
 
 ]
 
-const router = new VueRouter({
+let router = new VueRouter({
   routes,
   mode:'history'
 })
@@ -72,5 +82,43 @@ Vue.component('institutionhome',institutionhome)
 Vue.component('teacherhome',teacherhome)
 Vue.component('studentSchooledhome',studentSchooledhome)
 Vue.component('studentNotSchooledhome',studentNotSchooledhome)
+
+router.beforeEach((to, from, next) => {
+  // Check for requiredAuth guard
+  if(to.matched.some(record => record.meta.requiresAuth)) {
+    // Check if not logged in
+    if(!firebase.auth().currentUser) {
+      // Go to Login
+      next({
+        path: '/',
+        query: {
+          redirect: to.fullPath
+        }
+      })
+    } else {
+      // Proceed to route
+      next()
+    }
+  }
+  else if(to.matched.some(record => record.meta.requiresGuest)) {
+     // Check if logged in
+     if(firebase.auth().currentUser) {
+      // Go to accounthome
+      next({
+        path: '/home/:username',
+        query: {
+          redirect: to.fullPath
+        }
+      })
+    } else {
+      // Proceed to route
+      next()
+    }
+  }
+  else {
+    // Proceed to route
+    next()
+  }
+})
 
 export default router

@@ -3,7 +3,7 @@
         <div class="text-center">
             <h1>School: {{institution.name}}</h1>
             <h6>Population: {{institution.population}}</h6>
-            <button v-on:click="signout()" class="btn btn-outline-danger m-2s">Log Out</button>
+            
         </div>
         <div class="container">
             <div class="row border border-light">
@@ -86,7 +86,7 @@ export default {
             .signOut()
             .then(() => {
                 alert(this.username + ' signed out successfully')
-                this.$router.push('/') 
+                this.$router.go({path: this.$router.path}) 
             }, function(error) {
                 alert('Sign Out Error', error);
             });

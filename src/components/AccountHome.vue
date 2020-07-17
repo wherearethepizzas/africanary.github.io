@@ -11,6 +11,7 @@
 <script>
 import firebase, { auth, firestore } from 'firebase'
 export default {
+    
     data(){
         return{
             email: auth().currentUser.email,

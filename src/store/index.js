@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state:{
 
-        subjectsAvailable:['Math','English','Kiswahili','Physics','Chemistry','Biology','History','Geography',],
+        subjectsAvailable:['Mathematics','English','Kiswahili','Physics','Chemistry','Biology','History','Geography',],
         
         studentSchooled:{
             school:'',

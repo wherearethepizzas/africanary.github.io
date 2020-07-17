@@ -3,7 +3,7 @@
     <div class="text-center m-5">
       <h4>Name: {{username}}</h4>
       <h6>Account type: {{accountType}}</h6>
-      <button v-on:click="signout()" class="btn btn-outline-danger m-2s">Log Out</button>  
+      
     </div>
     
     <div class="container mt-5 border p-5">

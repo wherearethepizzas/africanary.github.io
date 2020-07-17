@@ -2,7 +2,7 @@
     <div class="text-center bg-secondary m-5 p-5">
         <p class="display-2 text-white">Not yet developed.Thank you for signing up though.</p>
         <p class="text-white">:-)</p>
-        <button type="submit" v-on:click="signout()" class="btn btn-outline-danger m-2s">Log Out</button>
+        
     </div>
 </template>
 
