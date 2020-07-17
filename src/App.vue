@@ -29,7 +29,7 @@
             <a v-if="isLoggedIn" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjC7Jr83tPqAhUID2MBHR5qBKUQFjAAegQIBhAB&url=https%3A%2F%2Femupedia.net%2Fbeta%2Femuos%2F&usg=AOvVaw360HQYbiDNRLDpp__Qkhyu" class="nav-link">Games</a>
           </li>
           <li class="nav-item">
-            <a v-if="isLoggedIn" href="http://wherearethepizzas-chatroom.glitch.me" class="nav-link">Connect</a>
+            <a v-if="isLoggedIn" href="https://wherearethepizzas-chatroom.glitch.me" class="nav-link">Connect</a>
           </li>
           <li class="nav-item">
             <button v-if="isLoggedIn" v-on:click="logout" class="btn btn-danger">Sign Out</button>
