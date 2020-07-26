@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-center m-5">
+    <div class="text-center p-5" id="inf">
       <h4>Name: {{username}}</h4>
       <h6>Account type: {{accountType}}</h6>
       
@@ -60,17 +60,6 @@ export default {
 
             this.$router.push('/home/' + this.username + '/Subjects' + '/' + subject )
             
-        },
-        signout:function(){
-            firebase
-            .auth()
-            .signOut()
-            .then(() => {
-                alert(this.username + ' signed out successfully')
-                this.$router.push('/') 
-            }, function(error) {
-                alert('Sign Out Error', error);
-            });
         }
 
     },

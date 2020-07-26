@@ -1,6 +1,6 @@
 <template>
     <div class="body" v-bind:style="{ backgroundImage: 'url(' + backimg + ')' }">
-                <div class=" form-group w-100 bg-transparent text-white p-5 mx-auto rounded">
+                <div id="formarea" class=" form-group w-auto  text-white p-3 mx-auto rounded">
                     
                     <label for="" class="lead">Account Type:</label>
                     <select class="form-control form-control-lg" id="accountType" v-on:click="pageload()">
@@ -261,12 +261,12 @@ export default {
 .body{
     padding:5.92%;
     background-size: cover;
-    background-position: right;
-
-
+    max-width: 100%;
+    height: auto;
+    
 }
 #formarea{
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 </style>

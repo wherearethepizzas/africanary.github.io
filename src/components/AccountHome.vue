@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="body">
       <institutionhome style="display:none;" id="institutionhome"></institutionhome>
       <teacherhome style="display:none;" id="teacherhome"></teacherhome>
       <studentSchooledhome style="display:none;" id="studentSchooledhome"></studentSchooledhome>
@@ -46,6 +46,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+#body {
+    background-image: url('https://www.canva.com/learn/wp-content/uploads/2016/01/Patterns-3-03.jpg');
+    background-size: contain;
+    
+}
+</style>>
 
 </style>

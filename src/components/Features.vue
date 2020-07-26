@@ -28,7 +28,7 @@
                         </div> 
                         <div class="card-body">
 
-                            <p>Nothing is as comprehensive as a practical experience to a concept, but what about the next best thing with.Videos help to visualize a concept through imagery and sound and with over 50 videos you can never get enough.</p>
+                            <p>Nothing is as comprehensive as a practical experience to a concept, but what about the next best thing; Videos help to visualize a concept through imagery and sound.</p>
                 
                         </div>
                 </div>
@@ -44,7 +44,7 @@
                         </div> 
                         <div class="card-body">
 
-                            <p>Human beings are social creatures and if history is to prove anything it is that two heads are better than one. Canary takes connection to the next level by encouraging teamwork between students and teachers.</p>
+                            <p>Human beings are social creatures and if history is to prove anything it is that two heads are better than one. Canary takes connection to the next level by encouraging teamwork between students and teachers with our Canary Chatroom.</p>
                 
                         </div>
                 </div>
@@ -56,11 +56,11 @@
                         <div class="card-header">
 
                         <h4>Games</h4> 
-                        <small>Coming soon...</small>
+                    
                         </div> 
                         <div class="card-body">
 
-                            <p>Master concepts learnt by playing a few simple games.</p>
+                            <p>Take a break afterwards and play some classic games.</p>
                 
                         </div>
                 </div>

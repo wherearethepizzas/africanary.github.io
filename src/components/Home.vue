@@ -12,28 +12,28 @@
       <img :src="slide1" class="d-block w-100"  alt="...">
       <div class="carousel-caption d-none d-block">
         <h5>Engage</h5>
-        <p class="text-lg-center">Practice a variety of exercises and be able to access a wide database of knowledge through Canary.</p>
+        <p class="text-light">Practice a variety of exercises and be able to access a wide database of knowledge through Canary.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img :src="slide2" class="d-block w-100"  alt="...">
       <div class="carousel-caption d-block">
         <h5 class="text-dark">Share</h5>
-        <p class="text-dark">Work with others and share experiences with them after all two heads are better than one.</p>
+        <p class="text-dark">Work with others and share experiences with them.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img :src="slide3" class="d-block w-100"  alt="...">
       <div class="carousel-caption d-block">
         <h5>Grow</h5>
-        <p class="text-lg-center">Through Canary, progress of a user is measured and they are able to track their progress,their growth.</p>
+        <p class="text-lg-center">Through Canary, a user's progress is measured and they are able to track their progress.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img :src="slide4" class="d-block w-100"  alt="...">
       <div class="carousel-caption d-block">
-        <h5 class="form-text">Go Further</h5>
-        <p class="form-text">A tool is only as good as its wielder. We urge you to be curious and strive to learn more.</p>
+        <h5 class="text-dark">Go Further</h5>
+        <p class="text-light">A tool is only as good as its wielder.<br> We urge you to be curious and strive to learn more.</p>
       </div>
     </div>
   </div>
@@ -142,13 +142,19 @@ header .overlay {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: 1;
 }
 
 div img {
   max-height: 620px;
   min-height: 350px;
+}
+
+#pcontent {
+  color:gainsboro;
+  opacity: 1;
+  
 }
 
 

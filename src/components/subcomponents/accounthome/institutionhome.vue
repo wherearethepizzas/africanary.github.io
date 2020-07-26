@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="text-center">
+        <div class="text-center p-5" id="inf">
             <h1>School: {{institution.name}}</h1>
             <h6>Population: {{institution.population}}</h6>
             
@@ -79,18 +79,8 @@ export default {
                 page.teachers = doc.data().teachers
                 page.students = doc.data().students
             })
-    },
-    signout:function(){
-            firebase
-            .auth()
-            .signOut()
-            .then(() => {
-                alert(this.username + ' signed out successfully')
-                this.$router.go({path: this.$router.path}) 
-            }, function(error) {
-                alert('Sign Out Error', error);
-            });
-        }
+    }
+    
         
 
 
